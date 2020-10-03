@@ -18,11 +18,22 @@ void main() =>
 
   ),
 
-  body: Padding(
-      child: Text('Hello Container'),
-    padding: EdgeInsets.all(20.0),
-     
+  body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text('Hello row'),
+          FlatButton(
+            child: Text('Click me!'),
+            onPressed: () {},
+            color: Colors.grey,
+          ),
+          Container(
+          child: Text('Last Button'), 
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+  )
 
+        ],
   ),
   floatingActionButton: FloatingActionButton(
   onPressed: () {},
